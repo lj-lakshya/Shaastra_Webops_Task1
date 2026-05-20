@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { motion, useMotionTemplate, useMotionValue } from 'framer-motion';
 import { cn } from '../lib/utils';
 import { ShoppingCart, Compass } from 'lucide-react';
-import header1 from './ui/header-1';
-import footer4Col from './ui/footer-4col';
+import Header1 from './ui/header-1';
+import Footer4Col from './ui/footer-4col';
 
 export default function Hero() {
   const mouseX = useMotionValue(0);
@@ -33,7 +33,7 @@ export default function Hero() {
           `,
         }}
       />
-      <header1 />
+      <Header1 />
       <section className="relative w-full pt-32 pb-16 md:pt-40 md:pb-20 z-10">
         <div className="absolute top-0 right-0 h-full w-1/2 bg-[radial-gradient(circle_at_70%_30%,_rgba(16,185,129,0.1)_0%,_transparent_60%)] dark:bg-[radial-gradient(circle_at_70%_30%,_rgba(16,185,129,0.15)_0%,_transparent_60%)] pointer-events-none" />
         <div className="absolute top-0 left-0 h-full w-1/2 -scale-x-100 bg-[radial-gradient(circle_at_70%_30%,_rgba(99,102,241,0.1)_0%,_transparent_60%)] dark:bg-[radial-gradient(circle_at_70%_30%,_rgba(99,102,241,0.15)_0%,_transparent_60%)] pointer-events-none" />
@@ -97,7 +97,7 @@ export default function Hero() {
         </div>
       </section>
       <div className="relative z-10">
-        <footer4Col />
+        <Footer4Col />
       </div>
     </div>
   );
